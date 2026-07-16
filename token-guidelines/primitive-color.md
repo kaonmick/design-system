@@ -1,8 +1,8 @@
 # Primitive Color
 
-> Tailwind CSS v4 の標準カラーパレットです。これは **Primitive の参照用** であり、Semantic Token として直接使うものではありません。
+> Tailwind CSS v4.3.3 の標準カラーパレットです。これは **Primitive の参照用** であり、Semantic Token として直接使うものではありません。
 
-各セルは、色名と段階（例: <code>blue-500</code>）で参照します。値は Tailwind CSS v4 の <code>theme.css</code> に定義されている OKLCH 値です。
+各セルは、色名と段階（例: <code>blue-500</code>）で参照します。値は Tailwind CSS v4.3.3 の <code>theme.css</code> に定義されている OKLCH 値です。
 
 <div class="palette-table-wrap" tabindex="0" aria-label="Tailwind CSS v4 カラーパレット">
   <table class="palette-table">
@@ -92,6 +92,62 @@
           <td><span class="palette-swatch palette-swatch--dark" style="--swatch: oklch(26.8% 0.007 34.298)"></span></td>
           <td><span class="palette-swatch palette-swatch--dark" style="--swatch: oklch(21.6% 0.006 56.043)"></span></td>
           <td><span class="palette-swatch palette-swatch--dark" style="--swatch: oklch(14.7% 0.004 49.25)"></span></td>
+        </tr>
+        <tr>
+          <th scope="row">mauve</th>
+          <td><span class="palette-swatch" style="--swatch: oklch(98.5% 0 none)"></span></td>
+          <td><span class="palette-swatch" style="--swatch: oklch(96% 0.003 325.6)"></span></td>
+          <td><span class="palette-swatch" style="--swatch: oklch(92.2% 0.005 325.62)"></span></td>
+          <td><span class="palette-swatch" style="--swatch: oklch(86.5% 0.012 325.68)"></span></td>
+          <td><span class="palette-swatch" style="--swatch: oklch(71.1% 0.019 323.02)"></span></td>
+          <td><span class="palette-swatch" style="--swatch: oklch(54.2% 0.034 322.5)"></span></td>
+          <td><span class="palette-swatch palette-swatch--dark" style="--swatch: oklch(43.5% 0.029 321.78)"></span></td>
+          <td><span class="palette-swatch palette-swatch--dark" style="--swatch: oklch(36.4% 0.029 323.89)"></span></td>
+          <td><span class="palette-swatch palette-swatch--dark" style="--swatch: oklch(26.3% 0.024 320.12)"></span></td>
+          <td><span class="palette-swatch palette-swatch--dark" style="--swatch: oklch(21.2% 0.019 322.12)"></span></td>
+          <td><span class="palette-swatch palette-swatch--dark" style="--swatch: oklch(14.5% 0.008 326)"></span></td>
+        </tr>
+        <tr>
+          <th scope="row">olive</th>
+          <td><span class="palette-swatch" style="--swatch: oklch(98.8% 0.003 106.5)"></span></td>
+          <td><span class="palette-swatch" style="--swatch: oklch(96.6% 0.005 106.5)"></span></td>
+          <td><span class="palette-swatch" style="--swatch: oklch(93% 0.007 106.5)"></span></td>
+          <td><span class="palette-swatch" style="--swatch: oklch(88% 0.011 106.6)"></span></td>
+          <td><span class="palette-swatch" style="--swatch: oklch(73.7% 0.021 106.9)"></span></td>
+          <td><span class="palette-swatch" style="--swatch: oklch(58% 0.031 107.3)"></span></td>
+          <td><span class="palette-swatch palette-swatch--dark" style="--swatch: oklch(46.6% 0.025 107.3)"></span></td>
+          <td><span class="palette-swatch palette-swatch--dark" style="--swatch: oklch(39.4% 0.023 107.4)"></span></td>
+          <td><span class="palette-swatch palette-swatch--dark" style="--swatch: oklch(28.6% 0.016 107.4)"></span></td>
+          <td><span class="palette-swatch palette-swatch--dark" style="--swatch: oklch(22.8% 0.013 107.4)"></span></td>
+          <td><span class="palette-swatch palette-swatch--dark" style="--swatch: oklch(15.3% 0.006 107.1)"></span></td>
+        </tr>
+        <tr>
+          <th scope="row">mist</th>
+          <td><span class="palette-swatch" style="--swatch: oklch(98.7% 0.002 197.1)"></span></td>
+          <td><span class="palette-swatch" style="--swatch: oklch(96.3% 0.002 197.1)"></span></td>
+          <td><span class="palette-swatch" style="--swatch: oklch(92.5% 0.005 214.3)"></span></td>
+          <td><span class="palette-swatch" style="--swatch: oklch(87.2% 0.007 219.6)"></span></td>
+          <td><span class="palette-swatch" style="--swatch: oklch(72.3% 0.014 214.4)"></span></td>
+          <td><span class="palette-swatch" style="--swatch: oklch(56% 0.021 213.5)"></span></td>
+          <td><span class="palette-swatch palette-swatch--dark" style="--swatch: oklch(45% 0.017 213.2)"></span></td>
+          <td><span class="palette-swatch palette-swatch--dark" style="--swatch: oklch(37.8% 0.015 216)"></span></td>
+          <td><span class="palette-swatch palette-swatch--dark" style="--swatch: oklch(27.5% 0.011 216.9)"></span></td>
+          <td><span class="palette-swatch palette-swatch--dark" style="--swatch: oklch(21.8% 0.008 223.9)"></span></td>
+          <td><span class="palette-swatch palette-swatch--dark" style="--swatch: oklch(14.8% 0.004 228.8)"></span></td>
+        </tr>
+        <tr>
+          <th scope="row">taupe</th>
+          <td><span class="palette-swatch" style="--swatch: oklch(98.6% 0.002 67.8)"></span></td>
+          <td><span class="palette-swatch" style="--swatch: oklch(96% 0.002 17.2)"></span></td>
+          <td><span class="palette-swatch" style="--swatch: oklch(92.2% 0.005 34.3)"></span></td>
+          <td><span class="palette-swatch" style="--swatch: oklch(86.8% 0.007 39.5)"></span></td>
+          <td><span class="palette-swatch" style="--swatch: oklch(71.4% 0.014 41.2)"></span></td>
+          <td><span class="palette-swatch" style="--swatch: oklch(54.7% 0.021 43.1)"></span></td>
+          <td><span class="palette-swatch palette-swatch--dark" style="--swatch: oklch(43.8% 0.017 39.3)"></span></td>
+          <td><span class="palette-swatch palette-swatch--dark" style="--swatch: oklch(36.7% 0.016 35.7)"></span></td>
+          <td><span class="palette-swatch palette-swatch--dark" style="--swatch: oklch(26.8% 0.011 36.5)"></span></td>
+          <td><span class="palette-swatch palette-swatch--dark" style="--swatch: oklch(21.4% 0.009 43.1)"></span></td>
+          <td><span class="palette-swatch palette-swatch--dark" style="--swatch: oklch(14.7% 0.004 49.3)"></span></td>
         </tr>
         <tr>
           <th scope="row">red</th>
