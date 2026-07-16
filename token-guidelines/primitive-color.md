@@ -2,8 +2,6 @@
 
 > Tailwind CSS v4.3.3 の標準カラーパレットです。これは **Primitive の参照用** であり、Semantic Token として直接使うものではありません。
 
-各セルは、色名と段階（例: <code>blue-500</code>）で参照します。値は Tailwind CSS v4.3.3 の <code>theme.css</code> に定義されている OKLCH 値です。
-
 <div class="palette-table-wrap" tabindex="0" aria-label="Tailwind CSS v4 カラーパレット">
   <table class="palette-table">
     <thead>
