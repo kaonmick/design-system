@@ -5,6 +5,86 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Design System Docs</title>
     <link rel="stylesheet" href="//cdn.jsdelivr.net/npm/docsify@4/lib/themes/vue.css" />
+    <style>
+      .edit-page-link a {
+        align-items: center;
+        color: #42b983;
+        display: inline-flex;
+        gap: 0.3rem;
+        font-size: 0.85rem;
+        text-decoration: none;
+      }
+
+      .edit-page-link {
+        margin: -0.25rem 0 1.5rem;
+      }
+
+      .edit-page-link a:hover,
+      .edit-page-link a:focus {
+        text-decoration: underline;
+      }
+
+      .edit-page-link svg {
+        height: 0.9rem;
+        width: 0.9rem;
+      }
+
+      .palette-table-wrap {
+        margin: 1.5rem 0;
+        max-height: 75vh;
+        overflow: auto;
+      }
+
+      .palette-table {
+        border-collapse: separate;
+        border-spacing: 0;
+        font-size: 0.75rem;
+        margin: 0;
+        min-width: 72rem;
+      }
+
+      .palette-table th,
+      .palette-table td {
+        border-bottom: 1px solid #e5e5e5;
+        border-right: 1px solid #e5e5e5;
+        padding: 0;
+      }
+
+      .palette-table thead th {
+        background: #fff;
+        padding: 0.7rem 0.5rem;
+        position: sticky;
+        top: 0;
+        z-index: 2;
+      }
+
+      .palette-table tr > th:first-child {
+        background: #fff;
+        left: 0;
+        min-width: 5.5rem;
+        padding: 0.6rem;
+        position: sticky;
+        text-align: left;
+        z-index: 1;
+      }
+
+      .palette-table thead tr > th:first-child {
+        z-index: 3;
+      }
+
+      .palette-swatch {
+        background: var(--swatch);
+        box-sizing: border-box;
+        color: #111;
+        display: block;
+        min-width: 6rem;
+        padding: 0.7rem 0.5rem;
+      }
+
+      .palette-swatch--dark {
+        color: #fff;
+      }
+    </style>
   </head>
   <body>
     <div id="app"></div>
@@ -14,6 +94,21 @@
         loadSidebar: true,
         subMaxLevel: 2,
         auto2top: true,
+        plugins: [
+          function (hook, vm) {
+            hook.beforeEach(function (content) {
+              const filePath = vm.route.file || 'README.md'
+              const editUrl =
+                'https://github.com/kaonmick/design-system/edit/main/' + filePath
+              const editLink =
+                '<p class="edit-page-link"><a href="' +
+                editUrl +
+                '" target="_blank" rel="noopener noreferrer">GitHubで編集 <svg aria-hidden="true" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M15 3h6v6"></path><path d="M10 14 21 3"></path><path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2h4"></path></svg></a></p>'
+
+              return content.replace(/^# .+$/m, '$&\n\n' + editLink)
+            })
+          },
+        ],
         search: {
           placeholder: '検索',
           noData: '見つかりませんでした',

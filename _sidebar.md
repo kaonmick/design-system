@@ -7,6 +7,7 @@
   - [Anti-patterns](guidelines/anti-patterns.md)
 
 - Token Guidelines
+  - [Primitive Color](token-guidelines/primitive-color.md)
   - [Semantic Color](token-guidelines/semantic-color-guidelines.md)
   - [Semantic Dimension](token-guidelines/semantic-dimension-guidelines.md)
   - [Semantic Typography](token-guidelines/semantic-typography-guidelines.md)
